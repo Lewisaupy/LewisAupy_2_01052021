@@ -7,7 +7,7 @@ body {
     font-family: 'Raleway', sans-serif;
     color: #333;
     max-width: 1040px;
-    margin: 0;
+    margin: auto;
 }
 
 main {
@@ -294,6 +294,10 @@ a.nav-link {
     box-shadow: -6px 5px 15px 5px rgba(51,51,51,0.1);
 }
 
+.card-host:hover{
+    transform: scale(1.02);
+}
+
 .card-host ul {
     display: flex;
 }
@@ -312,7 +316,7 @@ a.nav-link {
 
 .card-popular {
     width: 100%;
-    height: auto;
+    height: 120px;
     border-radius: 20px;
     background-color: white;
     padding: 5px;
@@ -320,8 +324,13 @@ a.nav-link {
     box-shadow: -6px 5px 15px 5px rgba(51,51,51,0.1);
 }
 
+.card-popular:hover{
+    transform: scale(1.02);
+}
+
 .card-popular a {
     display: flex;
+    height: 100%;
 }
 
 .card-popular img {
@@ -340,6 +349,12 @@ a.nav-link {
 
 .card-popular-txt {
     margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-popular-txt ul {
+    margin-top: auto;
 }
 
 .cards-populars-container-title {
@@ -435,4 +450,138 @@ footer ul {
 
 footer li {
     padding-bottom: 10px;
+}
+
+
+
+/* MEDIA QUERIES °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+
+@media screen and (max-width: 1100px) {
+
+
+    body {
+        max-width: 900px;
+    }
+
+    main {
+        padding: 10px;
+        margin: auto;
+    }
+
+        .first-blockline {
+        display: block;
+    }
+
+    .filter-holder {
+        margin-bottom: 10px;
+        max-width: 50%;
+    }
+
+    #section-hosting-populars {
+        display: block;
+    }
+
+    .cards-host-container {
+        width: 100%;
+    }
+
+    .cards-populars-container {
+        width: 100%;
+    }
+
+    .cards-popular-wrapper {
+        display: flex;
+    }
+
+    .card-popular {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    footer {
+        display: block;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    #section-hosting-populars {
+        padding-bottom: 20px;
+    }
+
+    #section-activities {
+        display: block;
+        height: 1400px;
+    }
+
+    .first-blockline {
+        display: block;
+    }
+
+    .filter-holder {
+        margin-bottom: 10px;
+        max-width: 50%;
+    }
+
+    .card-line-wrapper {
+        display: block;
+    }
+
+    .cards-host-container {
+        width: 80%;
+    }
+
+    .card-host {
+        width: 100%;
+    }
+
+    .cards-populars-container {
+        width: 80%;
+    }
+
+    .cards-populars-container-title {
+        display: block;
+    }
+
+    .cards-popular-wrapper {
+        display: block;
+    }
+
+    .card-popular-txt ul {
+        margin-top: 5px;
+    }
+
+    .activities-wrapper {
+        display: block;
+    }
+
+    .card-activity-column {
+        height: auto;
+        width: 90%;
+    }
+
+    .card-activity-small {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .card-activity-medium {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .card-activity-big {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .card-activity-tall {
+        height: 200px;
+        margin-bottom: 10px;
+    }
 }
