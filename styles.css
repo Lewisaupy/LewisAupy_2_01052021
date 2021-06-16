@@ -6,19 +6,19 @@ body {
     background-color: #FAFAFA;
     font-family: 'Raleway', sans-serif;
     color: #333;
-    max-width: 1040px;
     margin: auto;
 }
 
 main {
     padding: 30px;
+    max-width: 1040px;
+    margin: auto;
 }
 
 header {
-    margin: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: auto;
     background-color: #FAFAFA;
+    max-width: 1040px;
 }
 
 h1 {
@@ -56,12 +56,6 @@ a {
     color: #333;
 }
 
-footer {
-    display: flex;
-    background-color: rgba(211, 211, 211, 0.582);
-    padding: 30px;
-}
-
 img {
     width: 100%;
     height: 100%;
@@ -72,6 +66,8 @@ img {
 
 img.logo {
     object-fit: contain;
+    padding-top: 15px;
+    padding-left: 20px;
 }
 
 strong {
@@ -108,8 +104,9 @@ strong {
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #FAFAFA;
 }
 
 .nav-link-group {
@@ -118,19 +115,26 @@ strong {
 }
 
 .nav-link {
-    margin-left: 30px;
-    padding-top: 15px;
+    margin-left: 50px;
+    padding-top: 40px;
     display: block;
 }
 
-a.nav-link {
-
+.link-host-activities {
+    margin-left: auto;
 }
 
 .nav-link:hover {
-    border-top: solid 5px #0065FC;
-    padding-top: 10px;
+    border-top: solid 1px #0065FC;
+    padding-top: 39px;
     color: #0065FC;
+}
+
+.btn-suscribe a {
+    display: block;
+    color: #0065FC;
+    font-weight: 600;
+    margin-right: 20px;
 }
 
 
@@ -207,7 +211,7 @@ a.nav-link {
 
 .filter-holder{
     border: 1px solid rgba(0, 0, 0, 0.1);
-    width: auto;
+    width: fit-content;
     height: 40px;
     display: flex;
     align-items: center;
@@ -444,6 +448,19 @@ a.nav-link {
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
+
+
+footer {
+    background-color: rgba(211, 211, 211, 0.582);
+    padding: 30px;
+}
+
+.footer-flex {
+    display: flex;
+    max-width: 1040px;
+    margin: auto;
+}
+
 footer ul {
     margin-right: 150px;
 }
@@ -458,6 +475,8 @@ footer li {
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
+
+
 @media screen and (max-width: 1100px) {
 
 
@@ -470,17 +489,18 @@ footer li {
         margin: auto;
     }
 
-        .first-blockline {
+    .first-blockline {
         display: block;
     }
 
     .filter-holder {
         margin-bottom: 10px;
-        max-width: 50%;
+        margin-left: 0px;
+        width: fit-content;
     }
 
     #section-hosting-populars {
-        display: block;
+        flex-direction: column;
     }
 
     .cards-host-container {
@@ -500,18 +520,47 @@ footer li {
     }
 }
 
-@media screen and (max-width: 500px) {
 
-    footer {
-        display: block;
-    }
+
+
+@media screen and (max-width: 500px) {
 
     h2 {
         margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .link-host-activities {
+        width: 100%;
+        order: 3;
+    }
+
+    .btn-suscribe {
+        order: 2;
+    }
+
+    .link-host-activities li {
+        padding-bottom: 10px;
+        width: 50%;
+        border-bottom: 2px solid #b9c3d3;
+    }
+
+    .link-host-activities li:hover {
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+    }
+
+    .nav-link:hover {
+        border-top: none;
+    }
+    
+    .finder-container {
+
     }
 
     #section-hosting-populars {
         padding-bottom: 20px;
+        flex-direction: column-reverse;
     }
 
     #section-activities {
@@ -520,12 +569,14 @@ footer li {
     }
 
     .first-blockline {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .filter-holder {
-        margin-bottom: 10px;
-        max-width: 50%;
+        height: auto;
+        margin-left: 0px;
+        margin-right: 20px;
     }
 
     .card-line-wrapper {
@@ -534,18 +585,21 @@ footer li {
 
     .cards-host-container {
         width: 80%;
+        background-color: #FAFAFA;
     }
 
     .card-host {
         width: 100%;
+        margin-left: 0px;
     }
 
     .cards-populars-container {
         width: 80%;
+        border-radius: 0px;
     }
 
     .cards-populars-container-title {
-        display: block;
+        display: flex;
     }
 
     .cards-popular-wrapper {
@@ -583,5 +637,14 @@ footer li {
     .card-activity-tall {
         height: 200px;
         margin-bottom: 10px;
+    }
+
+    .footer-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer ul {
+        margin-right: 0px;
     }
 }
