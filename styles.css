@@ -18,7 +18,7 @@ main {
 header {
     margin: auto;
     background-color: #FAFAFA;
-    max-width: 1040px;
+    max-width: 1440px;
 }
 
 h1 {
@@ -153,7 +153,6 @@ strong {
     display: flex;
     align-items: center;
     width: auto;
-    height: 30px;
     margin-top: 20px;
     margin-bottom: 40px;
 }
@@ -212,7 +211,6 @@ strong {
 .filter-holder{
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: fit-content;
-    height: 40px;
     display: flex;
     align-items: center;
     margin-left: 20px;
@@ -266,7 +264,7 @@ strong {
 
 #section-hosting-populars {
     display: flex;
-    width: 100%;
+    width:auto;
     height: auto;
     padding-bottom: 80px;
     margin: auto;
@@ -275,9 +273,9 @@ strong {
 .cards-host-container {
     background-color: #F2F2F2;
     border-radius: 30px;
-    width: 70%;
-    padding: 30px;
-    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .cards-host-container p {
@@ -317,14 +315,14 @@ strong {
 .cards-populars-container {
     background-color: #F2F2F2;
     border-radius: 30px;
-    width: 30%;
-    padding: 30px;
-    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .card-popular {
-    width: 100%;
+    width: auto;
     height: 120px;
+    margin-left: 10px;
     border-radius: 20px;
     background-color: white;
     padding: 5px;
@@ -368,7 +366,10 @@ strong {
 .cards-populars-container-title {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 20px;
 }
 
 
@@ -461,12 +462,10 @@ footer {
 
 .footer-flex {
     display: flex;
-    max-width: 1040px;
-    margin: auto;
+    justify-content: space-between;
 }
 
 footer ul {
-    margin-right: 150px;
 }
 
 footer li {
@@ -527,7 +526,11 @@ footer li {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
+
+    img.logo {
+        width: 50%;
+    }
 
     h2 {
         margin-bottom: 30px;
@@ -557,10 +560,6 @@ footer li {
     .nav-link:hover {
         border-top: none;
     }
-    
-    .finder-container {
-
-    }
 
     #section-hosting-populars {
         padding-bottom: 20px;
@@ -588,7 +587,7 @@ footer li {
     }
 
     .cards-host-container {
-        width: 80%;
+        width: 100%;
         background-color: #FAFAFA;
     }
 
@@ -598,7 +597,7 @@ footer li {
     }
 
     .cards-populars-container {
-        width: 80%;
+        width: auto;
         border-radius: 0px;
     }
 
@@ -646,6 +645,7 @@ footer li {
     .footer-flex {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
     footer ul {
