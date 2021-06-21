@@ -220,6 +220,10 @@ strong {
     border-radius: 50px;
 }
 
+.filter-holder :hover {
+    color: #0065FC;
+}
+
 .icon-filter-holder {
     display: flex;
     justify-content: center;
