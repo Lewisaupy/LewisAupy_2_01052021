@@ -11,7 +11,7 @@ body {
 
 main {
     padding: 30px;
-    max-width: 1040px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -42,6 +42,7 @@ p {
     font-size: 12px;
     color: rgba(0, 0, 0, 0.7);
     margin: 0px;
+    padding-top: px;
 }
 
 ul {
@@ -266,21 +267,25 @@ strong {
     display: flex;
     width:auto;
     height: auto;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     margin: auto;
 }
 
 .cards-host-container {
     background-color: #F2F2F2;
     border-radius: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 60px;
+    padding: 10px;
+    width: 70%;
 }
 
 .cards-host-container p {
     display: flex;
     align-items: center;
+}
+
+.cards-host-container h2 {
+   padding-left: 20px;
+   padding-bottom: 10px;
 }
 
 .card-line-wrapper {
@@ -315,8 +320,9 @@ strong {
 .cards-populars-container {
     background-color: #F2F2F2;
     border-radius: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    width: 30%;
 }
 
 .card-popular {
@@ -458,14 +464,17 @@ strong {
 footer {
     background-color: rgba(211, 211, 211, 0.582);
     padding: 30px;
+    padding-left: 5%;
 }
 
 .footer-flex {
     display: flex;
     justify-content: space-between;
+    max-width: 1440px;
 }
 
 footer ul {
+    
 }
 
 footer li {
@@ -508,10 +517,12 @@ footer li {
 
     .cards-host-container {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .cards-populars-container {
         width: 100%;
+        margin-left: 0px;
     }
 
     .cards-popular-wrapper {
@@ -587,7 +598,7 @@ footer li {
     }
 
     .cards-host-container {
-        width: 100%;
+        width: auto;
         background-color: #FAFAFA;
     }
 
@@ -619,7 +630,7 @@ footer li {
 
     .card-activity-column {
         height: auto;
-        width: 90%;
+        width: auto;
     }
 
     .card-activity-small {
