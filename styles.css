@@ -185,6 +185,10 @@ strong {
     border-bottom-right-radius: 15px;
 }
 
+button .fa-search {
+    display: none;
+}
+
 .searching {
     color: white;
     font-weight: 500;
@@ -259,6 +263,8 @@ strong {
 /* SECTION HOSTING and POPULARS °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+
+
 
 .card-img-wrapper img {
     height: 100px;
@@ -553,6 +559,14 @@ footer li {
 
     .btn-suscribe {
         order: 2;
+    }
+
+    button .fa-search {
+        display: inline;
+    }
+
+    .rechercher {
+        display: none;
     }
 
     .link-host-activities li {
